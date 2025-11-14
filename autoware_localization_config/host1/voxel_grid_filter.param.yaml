@@ -1,0 +1,8 @@
+# Modifications © 2025 XXXX
+# Original file from Autoware (Apache License 2.0)
+
+/**:
+  ros__parameters:
+    voxel_size_x: 0.1
+    voxel_size_y: 0.1
+    voxel_size_z: 0.1

@@ -1,0 +1,73 @@
+site_name: Distributed Multi-AV Architecture (DMAVA)
+site_description: A real-time distributed simulation framework for autonomous multi-vehicle operations
+site_url: https://av-anon.github.io/dmava-anon   # update this
+
+repo_name: av-anon/dmava-anon                    # update this
+repo_url: https://github.com/av-anon/dmava-anon  # update this
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true
+    
+nav:
+  - Home: index.md
+  - Getting Started:
+    - System Architecture: GettingStarted/SystemArchitecture/index.md
+    - Software Setup: GettingStarted/SoftwareSetup/index.md
+    - Multi-Vehicle Simulation: GettingStarted/Multi-VehicleSimulation/index.md
+  - Scalability: 
+    - Scaling to More Vehicles: Scalability/ScalingToMoreVehicles/index.md
+    - Benchmarks: Scalability/Benchmarks/index.md
+  - Extensions:
+    - Multi-Vehicle AVP (Autonomous Valet Parking): Extensions/Multi-VehicleAVP/index.md
+    - Future Work: Extensions/FutureWork/index.md
+  - Developer Guide:
+    - Quick Commands: DeveloperGuide/QuickCommands/index.md
+    - Mapping Workflow: DeveloperGuide/MappingWorkflow/index.md
+    - Lanelet Creation: DeveloperGuide/LaneletCreation/index.md
+    - License: DeveloperGuide/License/index.md
