@@ -1,4 +1,5 @@
 # Distributed Multi-Vehicle Architecture
+
 *A distributed simulation architecture for autonomous vehicles integrating Autoware Universe, AWSIM Labs, and Zenoh for synchronized multi-vehicle operation.*
 
 ![Autoware](https://img.shields.io/badge/Autoware-2024.11-blue?logo=autoware)
