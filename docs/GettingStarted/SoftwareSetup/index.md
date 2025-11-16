@@ -46,20 +46,11 @@ AnyDesk provides lightweight remote access and file transfer between hosts.
 
 ### Repository Cloning
 
-Clone the main repository for this framework on **all hosts**.
-
-**Recommended**: use the latest stable release  
+Clone the main repository for this architecture on **all hosts**.
 
 ```bash
 cd ~
-git clone https://github.com/XXXX/multi-vehicle-framework.git -b release/2025.08
-```
-
-**Alternatively**: use the main branch if you want the newest (possibly experimental) changes
-
-```bash
-cd ~
-git clone https://github.com/XXXX/multi-vehicle-framework.git
+git clone https://github.com/av-anon/dmava-anon
 ```
 
 The repository contains:
@@ -136,7 +127,7 @@ The following installation steps are adapted from the [Autoware Universe Source 
     ./setup-dev-env.sh
     ```
     
-    > If any build issues are encountered, see the [Autoware Troubleshooting Guide](https://autowarefoundation.github.io/autoware-documentation/main/support/troubleshooting/#build-issues) and [this issue thread](https://github.com/XXXX/multi-vehicle-framework/issues/24).
+    > If any build issues are encountered, see the [Autoware Troubleshooting Guide](https://autowarefoundation.github.io/autoware-documentation/main/support/troubleshooting/#build-issues) and [this issue thread](https://github.com/XXXX/dmava-anon/issues/24).
 
 4. **Import Source Code**
     ```bash
@@ -190,7 +181,7 @@ The following installation steps are adapted from the [Autoware Universe Source 
 
     > Building Autoware can take about 1-3 hours.
 
-    > If any build issues occur, refer to [issues](https://github.com/XXXX/multi-vehicle-framework/issues) or the Autoware community for possible solutions.
+    > If any build issues occur, refer to [issues](https://github.com/XXXX/dmava-anon/issues) or the Autoware community for possible solutions.
     
 ---
 
@@ -246,7 +237,7 @@ This section is adapted from the official [AWSIM Labs Unity Setup Guide](https:/
 
     Copy the configuration file from the repository to the home directory:
     ```bash
-    cp ~/multi-vehicle-framework/cyclonedds.xml ~/cyclonedds.xml
+    cp ~/dmava-anon/cyclonedds.xml ~/cyclonedds.xml
     ```
 
     Add these lines to your `~/.bashrc`:
@@ -354,7 +345,7 @@ After successful completion, the simulation will be running with two ego vehicle
 ### Zenoh Middleware
 
 [Zenoh](https://github.com/eclipse-zenoh/zenoh-plugin-ros2dds) is a lightweight communication middleware designed for data routing across networks. 
-In this framework, Zenoh bridges ROS 2 topics between multiple hosts, enabling real-time communication between AWSIM Labs and their respective Autoware instances running on separate machines.
+In this architecture, Zenoh bridges ROS 2 topics between multiple hosts, enabling real-time communication between AWSIM Labs and their respective Autoware instances running on separate machines.
 
 #### Design Considerations
 In this setup, AWSIM Labs simulates **two ego vehicles**, both publishing the same ROS 2 topics. To avoid collisions, one vehicle is assigned a topic namespace:
@@ -425,7 +416,7 @@ This ensures all topics are isolated. For the EgoVehicle_2 GameObject, open each
     Copy the configuration file from the repository to the home directory:
 
     ```bash
-    cp ~/multi-vehicle-framework/cyclonedds.xml ~/cyclonedds.xml
+    cp ~/dmava-anon/cyclonedds.xml ~/cyclonedds.xml
     ```
     
     Add the following to the .bashrc file:
@@ -446,14 +437,14 @@ Each Zenoh bridge must be launched with host-specific configurations, already av
 
 ```bash
 source ~/zenoh-plugin-ros2dds/install/setup.bash
-zenoh_bridge_ros2dds -c ~/multi-vehicle-framework/zenoh_configs/zenoh-bridge-awsim.json5  
+zenoh_bridge_ros2dds -c ~/dmava-anon/zenoh_configs/zenoh-bridge-awsim.json5  
 ```
 
 **Host 2** (start after Host 1 is running):  
 
 ```bash
 source ~/zenoh-plugin-ros2dds/install/setup.bash
-zenoh_bridge_ros2dds -c ~/multi-vehicle-framework/zenoh_configs/zenoh-bridge-vehicle2.json5 -e tcp/10.0.0.172:7447  
+zenoh_bridge_ros2dds -c ~/dmava-anon/zenoh_configs/zenoh-bridge-vehicle2.json5 -e tcp/10.0.0.172:7447  
 ```
 
 > **Note:** The IP `10.0.0.172` is only an example.  
