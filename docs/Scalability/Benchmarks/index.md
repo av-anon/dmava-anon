@@ -5,7 +5,7 @@ To evaluate the performance of running three vehicles across separate hosts, mem
 **Nitro PC (Host 1)**  
 
 ```bash
-ovin@ovin-Nitro-N50-640:~$ free -h
+XXXX@XXXX-Nitro-N50-640:~$ free -h
                 total        used        free      shared  buff/cache   available
 Mem:            23Gi        14Gi       721Mi       130Mi       8.0Gi       8.2Gi
 Swap:           31Gi          0B        31Gi
@@ -61,7 +61,7 @@ Two-host, two-vehicle scenarios never exhibited these delays, confirming that sc
 **Nitro PC (Host 1)**  
 
 ```bash
-ovin@ovin-Nitro-N50-640:~$ free -h
+XXXX@XXXX-Nitro-N50-640:~$ free -h
                total        used        free      shared  buff/cache   available
 Mem:           23Gi        13Gi       4.5Gi       108Mi       5.7Gi       9.7Gi
 Swap:          31Gi          0B       31Gi

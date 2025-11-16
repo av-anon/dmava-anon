@@ -1,8 +1,8 @@
 # Scaling to More Vehicles
 
-The framework can be extended beyond two vehicles by adding more hosts and namespaces. However, during testing with the available machines, certain issues were encountered that impacted performance.  
+The architecture can be extended beyond two vehicles by adding more hosts and namespaces. However, during testing with the available machines, certain issues were encountered that impacted performance.  
 
-Despite these constraints, the framework remained fully operational. Instructions are given below, as well as an example using a third host.
+Despite these constraints, the architecture remained fully operational. Instructions are given below, as well as an example using a third host.
 
 ---
 
@@ -57,7 +57,7 @@ To evaluate the scalability of the proposed architecture, a **third host (Victus
 
       ![image](modify_ui_camera.png)
 
-4. Create a Zenoh configuration file for Vehicle 3 (similar to Host 2). The file is already provided here: [zenoh-bridge-vehicle3.json5](https://github.com/XXXX/multi-vehicle-framework/blob/main/zenoh_configs/zenoh-bridge-vehicle3.json5).
+4. Create a Zenoh configuration file for Vehicle 3 (similar to Host 2). The file is already provided here: [zenoh-bridge-vehicle3.json5](https://github.com/av-anon/dmava-anon/blob/main/zenoh_configs/zenoh-bridge-vehicle3.json5).
 
 5. In each vehicle’s Zenoh configuration, explicitly deny the other vehicles’ topics to avoid cross-subscription.
 
@@ -68,7 +68,7 @@ To evaluate the scalability of the proposed architecture, a **third host (Victus
 
 ### Multi-Vehicle Simulation (3 Hosts)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5MeEh47mjOc?list=PL4MADLjXmDi1Q5XXCuFTEntWz1c_T50jd" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+[Demo](https://drive.google.com/file/d/1ZdEkBP0yP_jI7ySsC6nVQmk7pNM7tGzW/view?usp=drive_link)
 
 ---
 
