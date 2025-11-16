@@ -17,20 +17,20 @@ Open Terminator and create **two tabs**.
 
 - **Tab 1:** leave as a single terminal.  
 
-      ![image](host1_terminator_tab1.png)
+      > Image removed for anonymity
 
 - **Tab 2:** split into two vertical panes (side by side).  
 
-      ![image](host1_terminator_tab2.png)
+      > Image removed for anonymity
 
 ### Host 2
 Open Terminator with a **single tab**, then split it into two vertical panes.  
 
-![image](host2_terminator.png)
+> Image removed for anonymity
 
 
 
-This layout provides a clean and organized workspace for operating the framework.  
+This layout provides a clean and organized workspace for operating the architecture.  
 
 ---
 
@@ -87,7 +87,7 @@ This layout provides a clean and organized workspace for operating the framework
 
       ```bash
       source ~/zenoh-plugin-ros2dds/install/setup.bash
-      zenoh_bridge_ros2dds -c ~/multi-vehicle-framework/zenoh_configs/zenoh-bridge-awsim.json5
+      zenoh_bridge_ros2dds -c ~/dmava-anon/zenoh_configs/zenoh-bridge-awsim.json5
       ```
 
       **Host 2**
@@ -96,7 +96,7 @@ This layout provides a clean and organized workspace for operating the framework
 
       ```bash
       source ~/zenoh-plugin-ros2dds/install/setup.bash
-      zenoh_bridge_ros2dds -c ~/multi-vehicle-framework/zenoh_configs/zenoh-bridge-vehicle2.json5 -e tcp/<IP-address>:7447
+      zenoh_bridge_ros2dds -c ~/dmava-anon/zenoh_configs/zenoh-bridge-vehicle2.json5 -e tcp/<IP-address>:7447
       ```
       > Replace `<IP-address>` with the Host 1 IP address found in Step 3 of the [Zenoh Installation Steps](software-installation.md/#installation-steps_1).
 
@@ -107,7 +107,7 @@ This layout provides a clean and organized workspace for operating the framework
 
 ## Multi-Vehicle Demonstration
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/47XUYeN61CI?list=PL4MADLjXmDi1Q5XXCuFTEntWz1c_T50jd" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+[Demo](https://drive.google.com/file/d/1cP2wk7yO9fksDy_OJgCtxiNUdkgbzND4/view?usp=drive_link)
 
 ---
 

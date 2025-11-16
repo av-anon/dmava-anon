@@ -1,5 +1,5 @@
 site_name: Distributed Multi-AV Architecture (DMAVA)
-site_description: A real-time distributed simulation framework for autonomous multi-vehicle operations
+site_description: A real-time distributed simulation architecture for autonomous multi-vehicle operations
 site_url: https://av-anon.github.io/dmava-anon   # update this
 
 repo_name: av-anon/dmava-anon                    # update this
@@ -63,9 +63,9 @@ nav:
   - Scalability: 
     - Scaling to More Vehicles: Scalability/ScalingToMoreVehicles/index.md
     - Benchmarks: Scalability/Benchmarks/index.md
-  - Extensions:
-    - Multi-Vehicle AVP (Autonomous Valet Parking): Extensions/Multi-VehicleAVP/index.md
-    - Future Work: Extensions/FutureWork/index.md
+  # - Extensions:
+    # - Multi-Vehicle AVP (Autonomous Valet Parking): Extensions/Multi-VehicleAVP/index.md
+    # - Future Work: Extensions/FutureWork/index.md
   - Developer Guide:
     - Quick Commands: DeveloperGuide/QuickCommands/index.md
     - Mapping Workflow: DeveloperGuide/MappingWorkflow/index.md
