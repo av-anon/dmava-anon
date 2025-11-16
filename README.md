@@ -11,7 +11,7 @@
 The **DMAVA** provides a complete setup for running **Autoware** and **AWSIM Labs** in a multi-host, multi-vehicle simulation environment for **AVs**, maintaining synchronized perception, localization, planning, and control pipelines.
 
 ## Demo
-[Demo Video](https://drive.google.com/file/d/1cP2wk7yO9fksDy_OJgCtxiNUdkgbzND4/view?usp=drive_link)
+[Demo](https://drive.google.com/file/d/1cP2wk7yO9fksDy_OJgCtxiNUdkgbzND4/view?usp=drive_link)
 
 ## Features
 
