@@ -22,6 +22,6 @@ The **DMAVA** provides a complete setup for running **Autoware** and **AWSIM Lab
 
 ## Getting Started
 
-To get started with running the framework, see the [System Architecture](GettingStarted/SystemArchitecture/index.md) page.
+To get started with running the DMAVA, see the [System Architecture](GettingStarted/SystemArchitecture/index.md) page.
 
 For a condensed list of frequently used commands, see the [Developer Quick Commands](DeveloperGuide/QuickCommands/index.md) page.
